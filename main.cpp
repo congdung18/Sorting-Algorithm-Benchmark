@@ -1,5 +1,5 @@
 #include "headers.hpp"
-#include "functions_used_include_DataGenerator.cpp"
+#include "implement.cpp"
 
 int main(int argc, char* argv[]){
     // Chọn 5 kích cỡ mảng để tăng tính trực quan so với 4 kích cỡ mảng
