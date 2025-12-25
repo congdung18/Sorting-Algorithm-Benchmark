@@ -18,6 +18,7 @@ A C++ project that benchmarks **classical and advanced sorting algorithms**, mea
 - Compare performance on different data distributions:
   - Random
   - Sorted
+  - Nearly sorted
   - Reversed
 - Measure:
   - Execution time using `std::chrono`
@@ -40,7 +41,8 @@ A C++ project that benchmarks **classical and advanced sorting algorithms**, mea
 - Data types:
   - Random
   - Already sorted
-  - Reverse sorted
+  - Nearly sorted
+  - Reversely sorted
 - Metrics:
   - Time (milliseconds)
   - Comparison count
@@ -49,28 +51,23 @@ A C++ project that benchmarks **classical and advanced sorting algorithms**, mea
 
 ## 🚀 How to Use
 1. Clone or pull the project to your local machine
-2. Compile and run the benchmark program
-3. The program will output benchmark results to files / console
+2. Compile and run the **main.cpp** program
+3. The program will output benchmark results to console and print a .txt file
 4. Each run produces consistent, comparable results across algorithms
-
-Example console output:
-```text
-Benchmark completed successfully
-```
 
 ## 📂 File Structure
 ```text
-├── sorting_algorithms.hpp
-├── sorting_algorithms.cpp
-├── benchmark.cpp
-├── data_generator.cpp
+├── headers.hpp
+├── implement.cpp
 ├── main.cpp
+├── report.pdf
 ```
 
 ### 📄 File Description
 **headers.hpp:** Declarations of all libraries used and functions involved.
 
 **implement.cpp:** 
+
 Implementations of sorting algorithms, including:
 
 - Quick Sort with median-of-three pivot selection
@@ -99,3 +96,6 @@ Handles:
 **main.cpp:**
 Entry point of the program.
 Runs benchmarks and prints or saves results.
+
+**report.pdf:**
+Report on main attribute of the data collected
